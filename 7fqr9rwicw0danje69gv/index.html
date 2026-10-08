@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Evoke Beauty Salon | concept preview</title>
+<style>
+:root{--bg:#15110E;--surface:#231C17;--text:#F6EFE6;--muted:#CDBFAE;--primary:#D9A441;--on-primary:#15110E;--accent:#F2C879}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:1.0625rem/1.65 'Helvetica Neue',Helvetica,Arial,sans-serif;overflow-wrap:anywhere;padding-bottom:4.5rem}
+h1,h2,h3{font-family:'Didot','Bodoni 72','Playfair Display',Georgia,'Times New Roman',serif;font-weight:400;letter-spacing:-.01em;line-height:1.05;margin:0 0 .45em}
+h1{font-size:clamp(2.6rem,8.5vw,5.6rem)} h2{font-size:clamp(1.8rem,4.6vw,2.7rem)} h3{font-size:1.25rem;line-height:1.2}
+p{margin:0 0 1em;max-width:62ch} a{color:var(--primary)}
+.skip{position:absolute;left:-9999px} .skip:focus{left:1rem;top:1rem;background:var(--surface);color:var(--text);padding:.6rem 1rem;z-index:9}
+.banner{background:var(--surface);color:var(--text);padding:.6rem 1rem;text-align:center;font-size:.9rem;line-height:1.45;border-bottom:3px solid var(--accent)}
+.wrap{max-width:72rem;margin:0 auto;padding:0 1.25rem}
+header .wrap{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;align-items:center;padding-top:.9rem;padding-bottom:.9rem}
+.brand{font:400 1.3rem/1.1 'Didot','Bodoni 72','Playfair Display',Georgia,'Times New Roman',serif;margin-right:auto;letter-spacing:-.01em}
+nav{display:flex;gap:.25rem}
+nav a{padding:.7rem .7rem;color:var(--text);text-decoration:none;font-weight:600} nav a:hover{text-decoration:underline;text-underline-offset:.3em}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.btn{display:inline-flex;align-items:center;gap:.6rem;min-height:3.1rem;padding:.7rem 1.4rem;border-radius:999px;font-weight:800;text-decoration:none;background:var(--primary);color:var(--on-primary);border:2px solid var(--primary)}
+.btn.alt{background:transparent;color:var(--primary)}
+.btn:hover{filter:brightness(1.08)}
+.hero{padding:clamp(2.2rem,6vw,4.5rem) 0 clamp(2.5rem,6vw,4.5rem);}
+.hero .wrap{display:grid;gap:2.5rem;grid-template-columns:1fr;align-items:center;text-align:center;justify-items:center}
+.hero .wrap>*{direction:ltr}
+.where{color:var(--muted);font-weight:600;margin:0 0 .9rem}
+.lede{font-size:1.25rem;color:var(--muted);margin:.4rem 0 1.4rem}
+.phone{display:inline-block;font:400 clamp(1.9rem,5.5vw,3rem)/1 'Didot','Bodoni 72','Playfair Display',Georgia,'Times New Roman',serif;color:var(--primary);text-decoration:none;letter-spacing:-.01em;margin:.2rem 0 1.1rem}
+.actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:.4rem;justify-content:center}
+.art{width:100%;max-width:25rem;justify-self:center} .art svg{width:100%;height:auto;display:block}
+
+section{padding:clamp(2.5rem,6vw,4.5rem) 0} .alt-bg{background:var(--surface)}
+.sec-head{margin-bottom:1.6rem} .sec-head p{color:var(--muted);margin:0}
+.services{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));list-style:none;margin:0;padding:0}
+.services li{display:flex;align-items:center;gap:1rem;padding:1.25rem;border-radius:1rem;background:var(--surface);flex-direction:column;align-items:flex-start;text-align:left}
+.alt-bg .services li{background:var(--bg)}
+.services li:last-child{}
+.services .ico{flex:none;color:var(--primary);width:2.6rem;height:2.6rem}
+.services h3{margin:0;font-size:1.3rem}
+.sample{color:var(--muted);font-size:.95rem;margin:1rem 0 0}
+.about{display:grid;gap:2rem;grid-template-columns:1fr 1fr;align-items:start}
+.facts{display:grid;grid-template-columns:max-content 1fr;gap:.9rem 1.75rem;margin:0} .facts dt{font-weight:800} .facts dd{margin:0}
+.call-band{background:var(--primary);color:var(--on-primary);padding:clamp(2.2rem,5vw,3.5rem) 0}
+.call-band h2{margin-bottom:.3em} .call-band a{color:var(--on-primary)}
+.call-band .phone{color:var(--on-primary)} .call-band .actions{justify-content:flex-start}
+.call-band .btn{background:var(--on-primary);color:var(--primary);border-color:var(--on-primary)}
+.call-band .btn.alt{background:transparent;color:var(--on-primary)}
+.disabled{border:2px dashed var(--on-primary);border-radius:.9rem;padding:1rem 1.2rem;margin-top:1.4rem;max-width:44rem}
+footer{padding:2rem 0 1.5rem;color:var(--muted);font-size:.92rem} footer p{margin:0 0 .6rem}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:5;display:none;padding:.6rem .8rem;background:var(--bg);border-top:1px solid color-mix(in srgb,var(--muted) 45%,transparent)}
+.callbar .btn{width:100%;justify-content:center}
+@media(max-width:760px){.hero .wrap,.about{grid-template-columns:1fr} .facts{grid-template-columns:1fr;gap:.2rem} .facts dd{margin-bottom:.8rem}
+.callbar{display:block} nav{display:none} .art{max-width:17rem;order:-1} header .wrap{padding-top:.7rem;padding-bottom:.7rem}}
+@media(min-width:761px){body{padding-bottom:0}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="banner" role="note">Independent concept preview, not the official website of Evoke Beauty Salon. Prepared by Nathan for the owner to look over. Nothing here is final, and it is not affiliated with the business.</div>
+<header><div class="wrap"><span class="brand">Evoke Beauty Salon</span><nav aria-label="Page sections"><a href="#services">Services</a><a href="#about">About</a><a href="#info">Find us</a><a href="#contact">Contact</a></nav></div></header>
+
+<main id="main">
+<section class="hero"><div class="wrap"><div><p class="where">Beauty salon in Sunnyvale</p><h1>Evoke Beauty Salon</h1><p class="lede">Beauty salon, serving Sunnyvale and nearby.</p><p class="lede">Contact details are being confirmed with the owner.</p><div class="actions"><a class="btn alt" href="mailto:info@evokebeautysalon.com">Email Evoke Beauty Salon</a></div></div><div class="art" aria-hidden="true"><svg viewBox="0 0 400 400" width="400" height="400" fill="none"><circle cx="200" cy="200" r="176" stroke="var(--primary)" stroke-width="2"/><circle cx="200" cy="200" r="158" stroke="var(--primary)" stroke-opacity=".5" stroke-width="1"/><g transform="translate(104 104) scale(4)" color="var(--primary)" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M24 3l5 15 15 6-15 6-5 15-5-15-15-6 15-6z"/></g></svg></div></div></section>
+<section id="services"><div class="wrap"><div class="sec-head"><h2>What we do</h2></div><ul class="services"><li><svg class="ico" viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M24 3l5 15 15 6-15 6-5 15-5-15-15-6 15-6z"/></svg><h3>Facials</h3></li><li><svg class="ico" viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M24 3l5 15 15 6-15 6-5 15-5-15-15-6 15-6z"/></svg><h3>Nails</h3></li><li><svg class="ico" viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M24 3l5 15 15 6-15 6-5 15-5-15-15-6 15-6z"/></svg><h3>Brows and lashes</h3></li><li><svg class="ico" viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M24 3l5 15 15 6-15 6-5 15-5-15-15-6 15-6z"/></svg><h3>Skin care</h3></li></ul><p class="sample">Sample list. These are typical services for this kind of business, shown here as placeholders; the owner chooses the real ones.</p></div></section>
+<section id="about" class="alt-bg"><div class="wrap about"><div><h2>About</h2><p>This is where the story of Evoke Beauty Salon goes: who runs it, what the work looks like, and why neighbors in Sunnyvale pick up the phone.</p><p class="sample">Sample text. The owner writes this part, or we draft it together once the site is approved.</p></div><div id="info"><h2>Find us</h2><dl class="facts"><dt>Find us</dt><dd>160 South Murphy Avenue, Sunnyvale, CA, 94086<br><a href="https://www.google.com/maps/search/?api=1&amp;query=160%20South%20Murphy%20Avenue%2C%20Sunnyvale%2C%20CA%2C%2094086">Get directions</a></dd><dt>Email</dt><dd><a href="mailto:info@evokebeautysalon.com">info@evokebeautysalon.com</a></dd></dl></div></div></section>
+<section id="contact" class="call-band"><div class="wrap"><h2>Get in touch</h2>
+<p class="lede">Contact details are being confirmed with the owner.</p>
+<div class="actions"><a class="btn" href="mailto:info@evokebeautysalon.com">Email Evoke Beauty Salon</a></div>
+<div class="disabled" role="note"><strong>Contact form disabled.</strong> This concept does not collect or send messages. A working form or booking tool would be set up if the owner approves the site.</div></div></section>
+</main>
+<footer><div class="wrap"><p>Independent concept preview, not the official website of Evoke Beauty Salon. Prepared by Nathan for the owner to look over. Nothing here is final, and it is not affiliated with the business.</p><p>To have this preview removed, reply to the email it came with and it will be taken down.</p></div></footer>
+
+</body>
+</html>
