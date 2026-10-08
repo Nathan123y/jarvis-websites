@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Cosmos Roofing | concept preview</title>
+<style>
+:root{--bg:#07090e;--surface:#111520;--text:#e2e8f0;--muted:#94a3b8;--primary:#38bdf8;--on-primary:#07090e;--accent:#f59e0b}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:1rem;line-height:1.6}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--surface);z-index:10}
+nav{display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:0 auto;padding:1rem 1.5rem}
+.logo{font-weight:700;font-size:1.1rem;color:var(--text);letter-spacing:0.05em}
+.nav-links{display:flex;gap:1.5rem;list-style:none}
+.nav-links a{color:var(--muted);font-size:0.95rem}
+.nav-links a:hover{color:var(--text)}
+main{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+section{padding:5rem 0;border-bottom:1px solid var(--surface)}
+section:last-of-type{border-bottom:none}
+.hero{display:grid;grid-template-columns:1fr;gap:3rem;align-items:center;padding:6rem 0}
+@media(min-width:768px){.hero{grid-template-columns:1.2fr 0.8fr}}
+.hero-content h1{font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.1;color:var(--text);margin-bottom:1.5rem;font-weight:800;letter-spacing:-0.03em}
+.hero-content p{color:var(--muted);font-size:1.15rem;margin-bottom:2rem;max-width:32rem}
+.hero-graphic{background:var(--surface);border:1px solid var(--muted);padding:2.5rem;display:flex;justify-content:center;align-items:center}
+.btn-group{display:flex;flex-wrap:wrap;gap:1rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--primary);color:var(--on-primary);font-weight:600;padding:0.75rem 1.5rem;min-height:44px;border:none;border-radius:0;text-decoration:none}
+.btn:hover{background:var(--accent);text-decoration:none}
+.btn-outline{background:transparent;border:1px solid var(--muted);color:var(--text)}
+.btn-outline:hover{border-color:var(--primary);background:transparent}
+h2{font-size:clamp(1.75rem,3vw,2.5rem);font-weight:700;margin-bottom:1rem;letter-spacing:-0.02em}
+.section-desc{color:var(--muted);margin-bottom:3rem;max-width:36rem}
+.grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
+@media(min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.grid{grid-template-columns:repeat(4,1fr)}}
+.card{background:var(--surface);border:1px solid var(--muted);padding:2rem}
+.card h3{font-size:1.25rem;margin-bottom:0.75rem;color:var(--text)}
+.card p{color:var(--muted);font-size:0.95rem}
+.notice{font-size:0.85rem;color:var(--accent);margin-bottom:1.5rem;display:block}
+.contact-grid{display:grid;grid-template-columns:1fr;gap:2rem}
+@media(min-width:768px){.contact-grid{grid-template-columns:1fr 1fr}}
+.contact-item{margin-bottom:1.5rem}
+.contact-item strong{display:block;color:var(--muted);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.contact-item a,.contact-item span{font-size:1.15rem;color:var(--text)}
+svg{width:100%;max-height:240px;height:auto}
+
+.cc-skip{position:absolute;left:-9999px}.cc-skip:focus{left:1rem;top:1rem;background:var(--surface);color:var(--text);padding:.6rem 1rem;z-index:99}
+.cc-banner{background:var(--surface);color:var(--text);padding:.6rem 1rem;text-align:center;font:.9rem/1.45 system-ui,sans-serif;border-bottom:3px solid var(--accent)}
+.cc-foot{background:var(--bg);color:var(--text);padding:2rem 1.25rem 1.5rem;font:.95rem/1.55 system-ui,sans-serif;border-top:1px solid var(--muted)}
+.cc-foot p{margin:0 auto .7rem;max-width:62rem}.cc-foot strong{font-weight:800}
+.cc-callbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;padding:.6rem .8rem;background:var(--bg);border-top:1px solid var(--muted)}
+.cc-btn{display:flex;align-items:center;justify-content:center;min-height:2.9rem;border-radius:.5rem;background:var(--primary);color:var(--on-primary);font:800 1.05rem system-ui,sans-serif;text-decoration:none}
+@media(max-width:760px){.cc-callbar{display:block}body{padding-bottom:4.5rem}}
+.cc-skip:focus-visible,.cc-btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+</style>
+</head>
+<body>
+<a class="cc-skip" href="#main">Skip to content</a>
+<div class="cc-banner" role="note">Independent concept preview, not the official website of Cosmos Roofing. Prepared by Nathan for the owner to look over. Nothing here is final, and it is not affiliated with the business.</div>
+<header>
+  <nav>
+    <a href="#main" class="logo">Cosmos Roofing</a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Cosmos Roofing</h1>
+      <p>Precision roofing services. Serving our region from Old Middlefield Way with uncompromising craftsmanship.</p>
+      <div class="btn-group">
+        <a href="tel:+16509697663" class="btn">+1-650-969-7663</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-graphic">
+      <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 15L20 75H40V125H160V75H180L100 15Z" stroke="var(--primary)" stroke-width="4" stroke-linejoin="round"/>
+        <path d="M70 125V85H130V125" stroke="var(--accent)" stroke-width="4"/>
+        <path d="M45 57L100 15L155 57" stroke="var(--accent)" stroke-width="4"/>
+      </svg>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <span class="notice">Sample services (owner will replace)</span>
+    <p class="section-desc">Comprehensive structural care executed with strict attention to material integrity and safety.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Roof repair</h3>
+        <p>Targeted solutions for leaks, storm impact, and wear over time.</p>
+      </div>
+      <div class="card">
+        <h3>Roof replacement</h3>
+        <p>Complete structural renewal using durable, modern materials.</p>
+      </div>
+      <div class="card">
+        <h3>Gutters</h3>
+        <p>Efficient drainage installation and maintenance systems.</p>
+      </div>
+      <div class="card">
+        <h3>Inspections</h3>
+        <p>Thorough evaluations to assess overall condition and longevity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <span class="notice">Sample about section (owner will replace)</span>
+    <p class="section-desc">Cosmos Roofing operates out of 1901 Old Middlefield Way, delivering reliable contracting work to our community. This text is a sample placeholder describing our commitment to technical skill and clear communication.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="section-desc">Reach out directly via phone, email, or visit our location.</p>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-item">
+          <strong>Phone</strong>
+          <a href="tel:+16509697663">+1-650-969-7663</a>
+        </div>
+        <div class="contact-item">
+          <strong>Email</strong>
+          <a href="mailto:info@cosmosroofing.com">info@cosmosroofing.com</a>
+        </div>
+      </div>
+      <div>
+        <div class="contact-item">
+          <strong>Address</strong>
+          <span>1901 Old Middlefield Way</span>
+        </div>
+        <div class="contact-item">
+          <strong>Directions</strong>
+          <a href="https://www.google.com/maps/search/?api=1&query=1901%20Old%20Middlefield%20Way">Open in Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="cc-foot"><p><strong>Contact form disabled.</strong> This concept does not collect or send messages. A working form or booking tool would be set up if the owner approves the site.</p><p>Independent concept preview, not the official website of Cosmos Roofing. Prepared by Nathan for the owner to look over. Nothing here is final, and it is not affiliated with the business.</p><p>To have this preview removed, reply to the email it came with and it will be taken down.</p></footer>
+<div class="cc-callbar"><a class="cc-btn" href="tel:+16509697663">Call +1-650-969-7663</a></div>
+</body>
+</html>
