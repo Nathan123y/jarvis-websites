@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Punch King Fitness | concept preview</title>
+<style>
+:root{--bg:#121212;--surface:#1f1f1f;--text:#f5f5f5;--muted:#b0b0b0;--primary:#34d399;--on-primary:#121212;--accent:#34d399}
+*,::after,::before{box-sizing:border-box;margin:0;padding:0}
+body{background-color:var(--bg);color:var(--text);font-family:system-ui,-apple-system,sans-serif;font-size:1rem;line-height:1.5}
+a{color:var(--primary);text-decoration:underline;text-underline-offset:4px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+header{background-color:var(--bg);border-bottom:2px solid var(--surface);padding:1rem 1.25rem}
+nav{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto}
+.logo{font-size:1.125rem;font-weight:900;text-transform:uppercase;letter-spacing:-0.05em;color:var(--text);text-decoration:none}
+.nav-links{display:flex;gap:1.5rem;list-style:none}
+.nav-links a{color:var(--text);text-decoration:none;font-weight:600;font-size:1rem}
+.nav-links a:hover{color:var(--primary)}
+main{max-width:1200px;margin:0 auto;padding:2rem 1.25rem}
+.hero{padding:4rem 0 3rem;display:grid;grid-template-columns:1fr;gap:2rem}
+@media(min-width:768px){.hero{grid-template-columns:1.2fr 0.8fr;align-items:center;padding:6rem 0}}
+.hero-content h1{font-size:clamp(3.5rem, 12vw, 7rem);font-weight:900;line-height:0.9;text-transform:uppercase;letter-spacing:-0.04em;color:var(--text);margin-bottom:1.5rem}
+.badge{display:inline-block;background-color:var(--primary);color:var(--on-primary);font-weight:900;text-transform:uppercase;font-size:0.875rem;padding:0.5rem 1rem;margin-bottom:1rem;letter-spacing:0.05em}
+.hero-text{font-size:1.25rem;color:var(--muted);margin-bottom:2rem;max-width:45ch}
+.hero-graphic{background-color:var(--surface);aspect-ratio:1;display:flex;align-items:center;justify-content:center;border:4px solid var(--text)}
+.hero-graphic svg{width:60%;height:60%;color:var(--primary)}
+.section{padding:4rem 0;border-top:2px solid var(--surface)}
+.section h2{font-size:clamp(2rem, 5vw, 3rem);font-weight:900;text-transform:uppercase;letter-spacing:-0.03em;margin-bottom:1.5rem}
+.muted-label{font-size:0.875rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);display:block;margin-bottom:0.5rem;font-weight:700}
+.sample-notice{background-color:var(--surface);border-left:4px solid var(--primary);padding:1rem;margin-bottom:2rem;font-size:1rem;color:var(--muted)}
+.grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
+@media(min-width:768px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.grid{grid-template-columns:repeat(4,1fr)}}
+.card{background-color:var(--surface);padding:2rem;border:2px solid var(--text);display:flex;flex-direction:column;justify-content:space-between}
+.card h3{font-size:1.5rem;font-weight:900;text-transform:uppercase;margin-bottom:1rem;letter-spacing:-0.02em}
+.card p{color:var(--muted);font-size:1rem}
+.contact-grid{display:grid;grid-template-columns:1fr;gap:2rem}
+@media(min-width:768px){.contact-grid{grid-template-columns:repeat(3,1fr)}}
+.contact-card{background-color:var(--surface);padding:2rem;border:2px solid var(--text)}
+.contact-card h3{font-size:1.25rem;font-weight:900;text-transform:uppercase;margin-bottom:0.75rem}
+.contact-card p, .contact-card a{font-size:1.125rem;color:var(--text);word-break:break-all}
+.contact-card a{display:inline-block;margin-top:0.5min;min-height:44px;line-height:44px}
+
+.cc-skip{position:absolute;left:-9999px}.cc-skip:focus{left:1rem;top:1rem;background:var(--surface);color:var(--text);padding:.6rem 1rem;z-index:99}
+.cc-banner{background:var(--surface);color:var(--text);padding:.6rem 1rem;text-align:center;font:.9rem/1.45 system-ui,sans-serif;border-bottom:3px solid var(--accent)}
+.cc-foot{background:var(--bg);color:var(--text);padding:2rem 1.25rem 1.5rem;font:.95rem/1.55 system-ui,sans-serif;border-top:1px solid var(--muted)}
+.cc-foot p{margin:0 auto .7rem;max-width:62rem}.cc-foot strong{font-weight:800}
+.cc-callbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;padding:.6rem .8rem;background:var(--bg);border-top:1px solid var(--muted)}
+.cc-btn{display:flex;align-items:center;justify-content:center;min-height:2.9rem;border-radius:.5rem;background:var(--primary);color:var(--on-primary);font:800 1.05rem system-ui,sans-serif;text-decoration:none}
+@media(max-width:760px){.cc-callbar{display:block}body{padding-bottom:4.5rem}}
+.cc-skip:focus-visible,.cc-btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+</style>
+</head>
+<body>
+<a class="cc-skip" href="#main">Skip to content</a>
+<div class="cc-banner" role="note">Independent concept preview, not the official website of Punch King Fitness. Prepared by Nathan for the owner to look over. Nothing here is final, and it is not affiliated with the business.</div>
+<header>
+<nav>
+<a href="#main" class="logo">Punch King Fitness</a>
+<ul class="nav-links">
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main id="main">
+<section class="hero">
+<div class="hero-content">
+<span class="badge">Beauty Salon</span>
+<h1>Punch King Fitness</h1>
+<p class="hero-text">Distinctive local beauty salon services delivered with bold confidence.</p>
+</div>
+<div class="hero-graphic" aria-hidden="true">
+<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="square" stroke-linejoin="miter">
+<path d="M20 80 L80 20 M30 20 L80 20 L80 70" />
+<circle cx="50" cy="50" r="35" stroke-dasharray="10 5" />
+</svg>
+</div>
+</section>
+
+<section id="services" class="section">
+<span class="muted-label">Offerings</span>
+<h2>Verified & Sample Services</h2>
+<p class="sample-notice">Note: No verified services are on file. The services listed below are samples the owner will replace.</p>
+<div class="grid">
+<div class="card">
+<h3>Facials</h3>
+<p>Sample service description for custom facial treatments.</p>
+</div>
+<div class="card">
+<h3>Nails</h3>
+<p>Sample service description for professional nail care.</p>
+</div>
+<div class="card">
+<h3>Brows and lashes</h3>
+<p>Sample service description for precise brow and lash styling.</p>
+</div>
+<div class="card">
+<h3>Skin care</h3>
+<p>Sample service description for advanced skin care regimens.</p>
+</div>
+</div>
+</section>
+
+<section id="about" class="section">
+<span class="muted-label">Background</span>
+<h2>About Our Salon</h2>
+<div class="card">
+<p class="sample-notice">Note: This is a clearly labelled sample for the owner to replace, with no factual claims.</p>
+<p>Punch King Fitness brings a sharp, distinctive approach to the local beauty salon scene. Our focus is entirely on delivering professional, high-impact care tailored to your unique style. Step in to experience dedicated craftsmanship in a bold new setting.</p>
+</div>
+</section>
+
+<section id="contact" class="section">
+<span class="muted-label">Get in Touch</span>
+<h2>Visit & Connect</h2>
+<div class="contact-grid">
+<div class="contact-card">
+<h3>Phone</h3>
+<p><a href="tel:+14157026430">+1 415-702-6430</a></p>
+</div>
+<div class="contact-card">
+<h3>Email</h3>
+<p><a href="mailto:inforichdist@punchkingfitness.com">inforichdist@punchkingfitness.com</a></p>
+</div>
+<div class="contact-card">
+<h3>Location</h3>
+<p>5820 Geary Boulevard</p>
+<p><a href="https://www.google.com/maps/search/?api=1&query=5820%20Geary%20Boulevard">Get Directions</a></p>
+</div>
+</div>
+</section>
+</main>
+<footer class="cc-foot"><p><strong>Contact form disabled.</strong> This concept does not collect or send messages. A working form or booking tool would be set up if the owner approves the site.</p><p>Independent concept preview, not the official website of Punch King Fitness. Prepared by Nathan for the owner to look over. Nothing here is final, and it is not affiliated with the business.</p><p>To have this preview removed, reply to the email it came with and it will be taken down.</p></footer>
+<div class="cc-callbar"><a class="cc-btn" href="tel:+14157026430">Call +1 415-702-6430</a></div>
+</body>
+</html>
