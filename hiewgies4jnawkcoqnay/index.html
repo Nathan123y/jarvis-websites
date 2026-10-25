@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Smooth Operator SF | concept preview</title>
+<style>
+:root{--bg:#121019;--surface:#282338;--text:#F3F1F8;--muted:#BEB6CD;--primary:#E5C158;--on-primary:#121019;--accent:#FF6B6B}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background-color:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:18px;line-height:1.5;overflow-x:hidden}
+a{color:var(--primary);text-decoration:none;display:inline-block}
+a:hover,a:focus{text-decoration:underline}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+header{background-color:var(--bg);border-bottom:2px solid var(--surface);position:sticky;top:0;z-index:10}
+nav{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:1.25rem 1.5rem}
+.nav-logo{font-size:1.2rem;font-weight:900;letter-spacing:-0.05em;color:var(--text)}
+.nav-links{display:flex;gap:1.5rem;list-style:none}
+.nav-links a{color:var(--text);font-size:1rem;font-weight:700;padding:0.75rem 0}
+.hero{background-color:var(--primary);color:var(--on-primary);padding:5rem 1.5rem 4rem;position:relative}
+.hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:center}
+h1{font-size:3.5rem;font-weight:900;line-height:0.95;letter-spacing:-0.04em;text-transform:uppercase}
+.hero p{font-size:1.35rem;font-weight:700;line-height:1.25;color:var(--on-primary);max-width:32rem}
+.hero-graphic{width:100%;max-width:320px;height:auto;display:block}
+.section{padding:5rem 1.5rem;max-width:1200px;margin:0 auto}
+.section-surface{background-color:var(--surface);border-radius:0;padding:4rem 2rem;margin:2rem 1.5rem}
+h2{font-size:2.5rem;font-weight:900;letter-spacing:-0.03em;line-height:1.1;margin-bottom:1.5rem;color:var(--text)}
+.sample-notice{background-color:var(--bg);color:var(--muted);font-size:1rem;padding:1rem;margin-bottom:2rem;border-left:4px solid var(--accent)}
+.services-grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
+.service-card{background-color:var(--bg);border:2px solid var(--muted);padding:2rem}
+.service-card h3{font-size:1.5rem;font-weight:900;margin-bottom:0.75rem;color:var(--text)}
+.service-card p{color:var(--muted);font-size:1.1rem}
+.info-grid{display:grid;grid-template-columns:1fr;gap:3rem}
+.info-block h3{font-size:1.35rem;font-weight:900;margin-bottom:0.75rem;color:var(--primary)}
+.info-block p,.info-block address{color:var(--text);font-style:normal;font-size:1.2rem;line-height:1.6}
+.hours-list{list-style:none}
+.hours-list li{display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid var(--muted);font-size:1.1rem}
+.cta-button{background-color:var(--primary);color:var(--on-primary);font-weight:900;text-transform:uppercase;font-size:1.1rem;padding:1rem 2rem;display:inline-block;margin-top:1.5rem;text-align:center;min-height:44px;min-width:44px}
+.cta-button:hover,.cta-button:focus{background-color:var(--text);color:var(--bg);text-decoration:none}
+@media (min-width:768px){
+.hero{padding:7rem 3rem}
+.hero-inner{grid-template-columns:1.2fr 0.8fr}
+h1{font-size:5.5rem}
+.hero p{font-size:1.6rem}
+.section{padding:7rem 3rem}
+.section-surface{padding:5rem;margin:3rem auto;max-width:1200px}
+.services-grid{grid-template-columns:repeat(2,1fr)}
+.info-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+.cc-skip{position:absolute;left:-9999px}.cc-skip:focus{left:1rem;top:1rem;background:var(--surface);color:var(--text);padding:.6rem 1rem;z-index:99}
+.cc-banner{background:var(--surface);color:var(--text);padding:.6rem 1rem;text-align:center;font:.9rem/1.45 system-ui,sans-serif;border-bottom:3px solid var(--accent)}
+.cc-foot{background:var(--bg);color:var(--text);padding:2rem 1.25rem 1.5rem;font:.95rem/1.55 system-ui,sans-serif;border-top:1px solid var(--muted)}
+.cc-foot p{margin:0 auto .7rem;max-width:62rem}.cc-foot strong{font-weight:800}
+.cc-callbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;padding:.6rem .8rem;background:var(--bg);border-top:1px solid var(--muted)}
+.cc-btn{display:flex;align-items:center;justify-content:center;min-height:2.9rem;border-radius:.5rem;background:var(--primary);color:var(--on-primary);font:800 1.05rem system-ui,sans-serif;text-decoration:none}
+@media(max-width:760px){.cc-callbar{display:block}body{padding-bottom:4.5rem}}
+.cc-skip:focus-visible,.cc-btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+</style>
+</head>
+<body>
+<a class="cc-skip" href="#main">Skip to content</a>
+<div class="cc-banner" role="note">Independent concept preview, not the official website of Smooth Operator SF. Prepared by Nathan for the owner to look over. Nothing here is final, and it is not affiliated with the business.</div>
+<header>
+<nav>
+<a href="#main" class="nav-logo">Smooth Operator SF</a>
+<ul class="nav-links">
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+<main id="main">
+<section class="hero">
+<div class="hero-inner">
+<div>
+<h1>Smooth Operator SF</h1>
+<p>Beauty salon in San Francisco.</p>
+<a href="tel:+18336757455" class="cta-button">+1-833-675-7455</a>
+</div>
+<div>
+<svg class="hero-graphic" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<rect width="200" height="200" fill="var(--on-primary)"></rect>
+<circle cx="100" cy="100" r="70" fill="none" stroke="var(--primary)" stroke-width="12"></circle>
+<path d="M60 100 Q100 40 140 100 Q100 160 60 100" fill="var(--accent)"></path>
+<circle cx="100" cy="100" r="25" fill="var(--on-primary)"></circle>
+</svg>
+</div>
+</div>
+</section>
+<section id="services" class="section">
+<h2>Services</h2>
+<div class="sample-notice">
+Note for owner: The services listed below are samples. Replace them with your verified services.
+</div>
+<div class="services-grid">
+<div class="service-card">
+<h3>Facials</h3>
+<p>Sample service description. Replace with your actual offerings.</p>
+</div>
+<div class="service-card">
+<h3>Nails</h3>
+<p>Sample service description. Replace with your actual offerings.</p>
+</div>
+<div class="service-card">
+<h3>Brows and lashes</h3>
+<p>Sample service description. Replace with your actual offerings.</p>
+</div>
+<div class="service-card">
+<h3>Skin care</h3>
+<p>Sample service description. Replace with your actual offerings.</p>
+</div>
+</div>
+</section>
+<section id="about" class="section section-surface">
+<h2>About</h2>
+<div class="sample-notice">
+Note for owner: Write your about section here. This is a placeholder.
+</div>
+<p>Smooth Operator SF brings dedicated beauty salon care to San Francisco. Visit our location on Market Street for professional service tailored to your needs.</p>
+</section>
+<section id="contact" class="section">
+<h2>Visit & Contact</h2>
+<div class="info-grid">
+<div class="info-block">
+<h3>Location</h3>
+<address>
+2352 Market Street<br>
+San Francisco, CA 94114
+</address>
+<p><a href="https://www.google.com/maps/search/?api=1&query=2352%20Market%20Street%2C%20San%20Francisco%2C%20CA%2C%2094114">Get Directions</a></p>
+</div>
+<div class="info-block">
+<h3>Hours</h3>
+<ul class="hours-list">
+<li><span>Mo-Th</span> <span>11:00-20:30</span></li>
+<li><span>Fr</span> <span>11:00-16:30</span></li>
+</ul>
+</div>
+<div class="info-block">
+<h3>Phone</h3>
+<p><a href="tel:+18336757455">+1-833-675-7455</a></p>
+</div>
+<div class="info-block">
+<h3>Email</h3>
+<p><a href="mailto:druciferlovesyou@gmail.com">druciferlovesyou@gmail.com</a></p>
+</div>
+</div>
+</section>
+</main>
+<footer class="cc-foot"><p><strong>Contact form disabled.</strong> This concept does not collect or send messages. A working form or booking tool would be set up if the owner approves the site.</p><p>Independent concept preview, not the official website of Smooth Operator SF. Prepared by Nathan for the owner to look over. Nothing here is final, and it is not affiliated with the business.</p><p>To have this preview removed, reply to the email it came with and it will be taken down.</p></footer>
+<div class="cc-callbar"><a class="cc-btn" href="tel:+18336757455">Call +1-833-675-7455</a></div>
+</body>
+</html>
