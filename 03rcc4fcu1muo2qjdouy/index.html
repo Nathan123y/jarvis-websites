@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Electricians Oakland | concept preview</title>
+<style>
+:root {
+  --bg: #0c0f12;
+  --surface: #15191f;
+  --text: #e6edf3;
+  --muted: #919aa6;
+  --primary: #4cc2ff;
+  --on-primary: #0c0f12;
+  --accent: #f0b429;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+a:focus-visible, input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--surface);
+}
+
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.95rem;
+}
+
+.nav-links a {
+  color: var(--muted);
+}
+
+.nav-links a:hover {
+  color: var(--text);
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem 5rem;
+}
+
+.hero {
+  padding: 5rem 0 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    grid-template-columns: 1.2fr 0.8fr;
+    padding: 7rem 0 6rem;
+  }
+}
+
+.hero-content h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin: 0 0 1.25rem 0;
+  color: var(--text);
+}
+
+.hero-content p {
+  color: var(--muted);
+  font-size: 1.2rem;
+  margin: 0 0 2rem 0;
+  max-width: 38ch;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  color: var(--on-primary);
+  font-weight: 600;
+  padding: 0 1.75rem;
+  min-height: 48px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: transform 0.1s ease;
+}
+
+.btn-primary:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.hero-graphic {
+  background-color: var(--surface);
+  border: 1px solid var(--surface);
+  border-radius: 8px;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-graphic svg {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  color: var(--primary);
+}
+
+section {
+  padding: 4rem 0;
+  border-top: 1px solid var(--surface);
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5rem 0;
+  color: var(--text);
+}
+
+.section-header p {
+  color: var(--muted);
+  margin: 0 0 2.5rem 0;
+  font-size: 1.05rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  background-color: var(--surface);
+  border-radius: 6px;
+  padding: 2rem;
+  border: 1px solid var(--surface);
+}
+
+.card h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.25rem;
+  color: var(--text);
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.sample-notice {
+  font-size: 0.85rem;
+  color: var(--accent);
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .contact-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  margin-bottom: 1.5rem;
+}
+
+.contact-info strong {
+  display: block;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.contact-info span, .contact-info a {
+  font-size: 1.15rem;
+  color: var(--text);
+}
+
+.contact-info a {
+  color: var(--primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .btn-primary {
+    transition: none;
+  }
+}
+
+.cc-skip{position:absolute;left:-9999px}.cc-skip:focus{left:1rem;top:1rem;background:var(--surface);color:var(--text);padding:.6rem 1rem;z-index:99}
+.cc-banner{background:var(--surface);color:var(--text);padding:.6rem 1rem;text-align:center;font:.9rem/1.45 system-ui,sans-serif;border-bottom:3px solid var(--accent)}
+.cc-foot{background:var(--bg);color:var(--text);padding:2rem 1.25rem 1.5rem;font:.95rem/1.55 system-ui,sans-serif;border-top:1px solid var(--muted)}
+.cc-foot p{margin:0 auto .7rem;max-width:62rem}.cc-foot strong{font-weight:800}
+.cc-callbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;padding:.6rem .8rem;background:var(--bg);border-top:1px solid var(--muted)}
+.cc-btn{display:flex;align-items:center;justify-content:center;min-height:2.9rem;border-radius:.5rem;background:var(--primary);color:var(--on-primary);font:800 1.05rem system-ui,sans-serif;text-decoration:none}
+@media(max-width:760px){.cc-callbar{display:block}body{padding-bottom:4.5rem}}
+.cc-skip:focus-visible,.cc-btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+</style>
+</head>
+<body>
+<a class="cc-skip" href="#main">Skip to content</a>
+<div class="cc-banner" role="note">Independent concept preview, not the official website of Electricians Oakland. Prepared by Nathan for the owner to look over. Nothing here is final, and it is not affiliated with the business.</div>
+<header>
+  <nav>
+    <div class="logo">Electricians Oakland</div>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Electrical services in Oakland</h1>
+      <p>Professional electrical work based right on Green Avenue.</p>
+      <a class="btn-primary" href="tel:+15102021046">Call +1-510-202-1046</a>
+    </div>
+    <div class="hero-graphic" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="section-header">
+      <h2>Services</h2>
+      <p>Sample services below (owner will replace these with actual offerings):</p>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Panel upgrades</h3>
+        <p>Modernizing electrical panels to safely handle current household power requirements.</p>
+      </div>
+      <div class="card">
+        <h3>Lighting installation</h3>
+        <p>Installing interior and exterior lighting fixtures safely and securely.</p>
+      </div>
+      <div class="card">
+        <h3>Outlets and switches</h3>
+        <p>Adding, replacing, and servicing wall outlets, dimmers, and control switches.</p>
+      </div>
+      <div class="card">
+        <h3>Troubleshooting</h3>
+        <p>Diagnosing and repairing electrical faults, flickering lights, and tripped breakers.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-header">
+      <h2>About Electricians Oakland</h2>
+      <p class="sample-notice">Sample text — owner will replace</p>
+    </div>
+    <div class="card">
+      <p>Electricians Oakland provides reliable electrical services to residents and businesses throughout the local area. Operating from our location on Green Avenue, we focus on careful diagnostics, clean installations, and clear communication on every job.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-header">
+      <h2>Contact Us</h2>
+      <p>Reach out directly by phone, email, or visit our location.</p>
+    </div>
+    <div class="contact-layout">
+      <div>
+        <ul class="contact-info">
+          <li>
+            <strong>Phone</strong>
+            <a href="tel:+15102021046">+1-510-202-1046</a>
+          </li>
+          <li>
+            <strong>Email</strong>
+            <a href="mailto:infotoashraful@gmail.com">infotoashraful@gmail.com</a>
+          </li>
+          <li>
+            <strong>Address</strong>
+            <span>1012 Green Avenue, Oakland, CA, 94612</span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div class="card">
+          <div>
+            <h3>Visit our location</h3>
+            <p>1012 Green Avenue, Oakland, CA, 94612</p>
+          </div>
+          <a class="btn-primary" href="https://www.google.com/maps/search/?api=1&query=1012%20Green%20Avenue%2C%20Oakland%2C%20CA%2C%2094612">Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="cc-foot"><p><strong>Contact form disabled.</strong> This concept does not collect or send messages. A working form or booking tool would be set up if the owner approves the site.</p><p>Independent concept preview, not the official website of Electricians Oakland. Prepared by Nathan for the owner to look over. Nothing here is final, and it is not affiliated with the business.</p><p>To have this preview removed, reply to the email it came with and it will be taken down.</p></footer>
+<div class="cc-callbar"><a class="cc-btn" href="tel:+15102021046">Call +1-510-202-1046</a></div>
+</body>
+</html>
